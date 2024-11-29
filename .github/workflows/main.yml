@@ -1,0 +1,48 @@
+# GitHub Action which generates the snake animations for the profile README every 24 hours
+name: Generate snake animations
+
+# This controlls when the action will run
+on:
+  # Generate a new animations every 24 hours
+  schedule:
+    - cron: "0 */24 * * *" 
+  
+  # Allows us to manually run the job at any time using the actions tab
+  workflow_dispatch:
+  
+  # Also run on every push on the master branch
+  push:
+    branches:
+    - master
+
+# Define the steps run on a GitHub runner (VM)
+jobs:
+  # This workflow contains one job called "generate"
+  generate:
+    # Permissions of the GITHUB_TOKEN (unspecified permissions are set to "none")
+    permissions: 
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    # Steps are tasks executed as part of the job
+    steps:
+      # Generate the light and dark svg snake animations and store them under './dist/'
+      - name: Generate the snake files under './dist/'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+      # Push the snake animations to the output branch of the projectuniverse repository
+      - name: Push the new files to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update snake animation files
+        # Environment variable
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
