@@ -1,9 +1,9 @@
-# GitHub Action which generates the snake animations for the profile README every 24 hours
-name: Generate snake animations
+# GitHub Action which generates the visuals for the profile README every 24 hours
+name: Generate visuals
 
 # This controlls when the action will run
 on:
-  # Generate a new animations every 24 hours
+  # Generate new visuals every 24 hours
   schedule:
     - cron: "0 */24 * * *" 
   
@@ -35,14 +35,33 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Generate the svg file that displays the LeetCode stats
+      - name: Generate LeetCode stats file
+        uses: lowlighter/metrics@latest
+        with:
+          filename: leetcode.svg
+          output_action: none
+          config_display: large
+          token: NOT_NEEDED
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_user: ProjectUniverse
+          plugin_leetcode_sections: solved, skills
+          plugin_leetcode_limit_skills: 100
           
+      # Move the LeetCode svg to './dist/'
+      - name: Move LeetCode stats to './dist'
+        run:
+          sudo mv /metrics_renders/* dist/
+
       # Push the snake animations to the output branch of the projectuniverse repository
       - name: Push the new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: Update snake animation files
+          commit_message: "chore: update README visuals"
         # Environment variable
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
