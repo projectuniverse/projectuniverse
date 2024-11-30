@@ -28,7 +28,7 @@ jobs:
     # Steps are tasks executed as part of the job
     steps:
       # Generate the light and dark svg snake animations and store them under './dist/'
-      - name: Generate the snake files under './dist/'
+      - name: Generate the snake files
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -37,11 +37,11 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       # Generate the svg file that displays the LeetCode stats
-      - name: Generate LeetCode stats file
+      - name: Generate the LeetCode stats file
         uses: lowlighter/metrics@latest
         with:
           filename: leetcode.svg
-          output_action: none
+          output_action: none # Stores the svg in '/metrics_renders' on the runner
           config_display: large
           token: NOT_NEEDED
           base: ""
@@ -50,12 +50,12 @@ jobs:
           plugin_leetcode_sections: solved, skills
           plugin_leetcode_limit_skills: 100
           
-      # Move the LeetCode svg to './dist/'
-      - name: Move LeetCode stats to './dist'
+      # On the runner, move the LeetCode svg from '/metrics_renders' to './dist/'
+      - name: Move the LeetCode stats to './dist'
         run:
           sudo mv /metrics_renders/* dist/
 
-      # Push the snake animations to the output branch of the projectuniverse repository
+      # Push the visuals to the output branch of the projectuniverse repository
       - name: Push the new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
