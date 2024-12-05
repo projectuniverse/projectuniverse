@@ -1,6 +1,6 @@
 ## Hi, I'm Julian 👋🏻
-* 👨🏻‍💻 Passionate computer science student and software developer who is dedicated to creating quality software
-* 💯 I love working on challenging software solutions, building apps, optimizing code, and exploring robotics and low-level programming
+* 👨🏻‍💻 Passionate computer science student and software developer who is dedicated to creating sleek and modern software
+* 💯 I love working on challenging software projects, building apps, optimizing code, and exploring robotics and low-level programming
 * 🛠️ Experienced in both frontend and backend, with a focus on backend development
 * 🔭 Currently pursuing my bachelor's degree
 * 🤓 Driven by expanding my knowledge and learning about new technologies
