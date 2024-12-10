@@ -165,9 +165,9 @@ Feel free to check out some of my projects, although not all of them are hosted 
 
 ## Problem Solving
 <p align="center">
-  <picture>
-    <img src="https://raw.githubusercontent.com/projectuniverse/projectuniverse/output/leetcode.svg" alt="My LeetCode statistics">
-  </picture>
+  <a href="https://leetcode.com/u/ProjectUniverse/">
+      <img src="https://raw.githubusercontent.com/projectuniverse/projectuniverse/output/leetcode.svg" alt="My LeetCode statistics">
+  </a>
 </p>
 
 ## Snake Contributions Graph
