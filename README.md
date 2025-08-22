@@ -52,12 +52,6 @@ Feel free to check out some of my projects, although not all of them are hosted 
 </picture>
 &VeryThinSpace;
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cpp&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cpp&theme=light">
-  <img src="https://skillicons.dev/icons?i=cpp&theme=dark" alt="C++" title="C++">
-</picture>
-&VeryThinSpace;
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py&theme=dark">
   <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py&theme=light">
   <img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python" title="Python">
@@ -85,7 +79,7 @@ Feel free to check out some of my projects, although not all of them are hosted 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=testinglibrary&theme=dark">
   <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=testinglibrary&theme=light">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=testinglibrary&theme=dark" alt="React Testing Library" title="React Testing Library">
+  <img src="https://go-skill-icons.vercel.app/api/icons?i=testinglibrary&theme=dark" alt="Testing Library" title="Testing Library">
 </picture>
 &VeryThinSpace;
 <picture>
