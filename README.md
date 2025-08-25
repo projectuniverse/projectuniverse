@@ -1,7 +1,7 @@
 ## Hi, I'm Julian 👋🏻
 * 👨🏻‍💻 Passionate software developer who is dedicated to creating sleek and modern software
 * 💯 I love working on challenging software projects, building apps, optimizing code, and exploring robotics and low-level programming
-* 🛠️ Full-stack developer, working in both frontend and backend
+* 🛠️ Full-stack developer, working in both front end and back end
 * 🤓 Driven by expanding my knowledge and learning about new technologies
 * 🎮 When I'm not coding, you might find me immersed in ultra-realistic open-world games
 
