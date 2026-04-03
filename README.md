@@ -5,7 +5,7 @@
 * 🤓 Driven by expanding my knowledge and learning about new technologies
 * 🎮 When I'm not coding, you might find me immersed in ultra-realistic open-world games
 
-Feel free to check out some of my projects, although not all of them are hosted on my personal GitHub.
+Feel free to check out some of my projects.
 
 <!-- Skill icons listed separately for custom spacing and tooltips. Images change color according to theme preferences. -->
 ## Languages
@@ -185,31 +185,6 @@ Feel free to check out some of my projects, although not all of them are hosted 
   <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=clion&theme=dark">
   <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=clion&theme=light">
   <img src="https://skillicons.dev/icons?i=clion&theme=dark" alt="CLion" title="CLion">
-</picture>
-
-## Operating Systems
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=apple&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=apple&theme=light">
-  <img src="https://skillicons.dev/icons?i=apple&theme=dark" alt="Apple - macOS & iOS" title="Apple - macOS & iOS">
-</picture>
-&VeryThinSpace;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=linux&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=linux&theme=light">
-  <img src="https://skillicons.dev/icons?i=linux&theme=dark" alt="Linux" title="Linux">
-</picture>
-&VeryThinSpace;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=windows&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=windows&theme=light">
-  <img src="https://skillicons.dev/icons?i=windows&theme=dark" alt="Windows" title="Windows">
-</picture>
-&VeryThinSpace;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=android&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=android&theme=light">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=android&theme=dark" alt="Android" title="Android">
 </picture>
 
 ## Problem Solving
